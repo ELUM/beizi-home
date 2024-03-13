@@ -1,10 +1,11 @@
 <script setup>
 
+import RightHeader from "@/views/right/RightHeader.vue";
 </script>
 
 <template>
   <div>
-    右盒子
+    <RightHeader />
   </div>
 </template>
 
