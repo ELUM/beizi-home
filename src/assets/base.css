@@ -50,6 +50,11 @@
 /*  }*/
 /*}*/
 
+@font-face {
+    font-face-name: "LXGW WenKai";
+    src: url('https://192960944.r.cdn36.com/chinesefonts3/packages/lxgwwenkai/dist/LXGWWenKai-Bold/result.css');
+}
+
 *,
 *::before,
 *::after {
@@ -65,7 +70,8 @@ body {
     transition: color 0.5s,
     background-color 0.5s;
     line-height: 1.6;
-    font-family: Inter,
+    font-family: 'LXGW WenKai',
+    Inter,
     -apple-system,
     BlinkMacSystemFont,
     'Segoe UI',
@@ -85,4 +91,8 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
+    background-color: rgba(0, 0, 0, .25);
+    background-image: url("https://jsd.cdn.zzko.cn/gh/ELUM/picx-images-hosting@master/wallhaven-v928el.70a37tr5r2.webp");
+    background-size: 100%;
+    background-blend-mode: darken;
 }

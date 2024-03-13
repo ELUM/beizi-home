@@ -3,14 +3,14 @@ import IconItem from "@/views/right/components/IconContainer/components/IconItem
 import {ref} from "vue";
 
 const iconItems = ref([{
-  icon: 'git',
+  icon: 'GitHub',
   label: 'GitHub'
 }, {
-  icon: 'git',
-  label: 'GitHu123213121121231b11'
+  icon: 'QQ',
+  label: 'QQ音乐'
 }, {
-  icon: 'git',
-  label: '小胡小胡小胡小胡小胡小胡小胡小胡小胡小胡小胡小胡小胡小胡小胡小胡小胡'
+  icon: 'Wyy',
+  label: '网易云音乐'
 }])
 </script>
 
