@@ -1,5 +1,6 @@
 <script setup>
 import {onMounted, ref} from "vue";
+import {IconPark} from '@icon-park/vue-next/es/all';
 
 const props = defineProps({
   label: {
@@ -34,7 +35,7 @@ const setIconWeightByStringType = (val) => {
 
     let lower = new RegExp("[a-z]+")
     if (lower.test(valElement)) {
-      sum = sum + 16
+      sum = sum + 12
     }
 
     // 判断是否为数字
@@ -49,27 +50,29 @@ const setIconWeightByStringType = (val) => {
 
 <template>
   <div class="icon-item">
-    <span class="icon">{{ props.icon }}</span>
-    <span class="label">{{ props.label }}</span>
+    <icon-park style="height: 24px;width: 24px" type="github" theme="filled" size="24px" fill="#EEEEEE"/>
+    <div class="label">{{ props.label }}</div>
   </div>
 </template>
 
 <style scoped>
 .icon-item {
-  text-align: center;
-  padding: 0 3px;
-  width: 80px;
+  gap: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
   height: 38px;
-  line-height: 38px;
   transition: width .3s ease;
   border-radius: 3px;
   margin-right: 10px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 .icon-item:before {
   content: " ";
+  border-radius: 3px;
   width: 100%;
   height: 38px;
   background: inherit;
@@ -83,16 +86,19 @@ const setIconWeightByStringType = (val) => {
   z-index: -1;
 }
 
-.icon-item > .label {
-  display: none;
-}
-
 .icon-item:hover {
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);;
   width: v-bind(stringWidth);
 }
 
-.icon-item:hover > .label {
-  display: inline;
+.icon-item .label {
+  display: none;
+}
+
+.icon-item:hover .label {
+  display: block;
+  white-space:nowrap;
 }
 
 </style>

@@ -3,7 +3,7 @@ import IconItem from "@/views/right/components/IconContainer/components/IconItem
 import {ref} from "vue";
 
 const iconItems = ref([{
-  icon: 'GitHub',
+  icon: 'gitHub',
   label: 'GitHub'
 }, {
   icon: 'QQ',
