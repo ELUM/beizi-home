@@ -4,68 +4,61 @@
 
 <template>
   <div class="left">
-    <div class="box">
-        <div class="headSculpture">
-          
-        </div>
-        <div class="introduce">
-            <div class="tip">私宅榛鹅心</div>
-        </div>
+    <div class="headSculpture">
+      <img src="https://b0.bdstatic.com/092d4259a03e725399027b952e652fd1.jpg@h_1280">
+    </div>
+    <div class="introduce">
+      <div class="tip">私宅榛鹅心</div>
     </div>
   </div>
 </template>
 
 <style scoped>
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .left {
 
   }
+
+  .headSculpture {
+    width: 100px;
+    height: 100px;
+  }
 }
-.left{
-  position: relative;
+
+.left {
+  padding: 10px;
 }
-.box{
-  width: 246px;
-  padding:  15px;
-  display: block;
-  flex-direction: column;
+
+.headSculpture {
+  height: 200px;
+  text-align: center;
 }
-.headSculpture{
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 10%;
-  width: 190px;
-  height: 190px;
-  margin:0 auto ;
-  background-image: url('https://b0.bdstatic.com/092d4259a03e725399027b952e652fd1.jpg@h_1280');
-  background-color: aliceblue;
+
+.headSculpture img {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
-.introduce{
-  display: block;
-  position: absolute;
-  top: 210px;
-  left: 7%;
-  width: 200px;
+
+.introduce {
   height: 120px;
-  border-radius: 25px;
+  border-radius: 10px;
   background: rgba(181, 221, 255, 0.6);
-  backdrop-filter:blur(15px)
+  backdrop-filter: blur(15px);
+  padding: 10px;
 }
-.tip{
-  display: inline-block;
-  margin: 10px;
+
+.tip {
   padding: 0 5px;
-  height: 24px;
-  widows: fit-content;
+  width: fit-content;
   white-space: nowrap;
   border-radius: 5px;
   background: rgba(76, 129, 245, 0.95);
-  font-family: '';
+  transition: font-size .3s ease;
 }
-@keyframes am1{
-  0%{}
+
+.tip:hover {
+  font-size: 32px;
 }
 </style>
